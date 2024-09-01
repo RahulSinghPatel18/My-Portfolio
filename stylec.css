@@ -1,0 +1,740 @@
+@font-face{
+    font-family:"FH Giselle";
+    src: url("./FHGiselle-Regular.ttf");
+    font-weight:400;
+}
+@font-face{
+    font-family:"FH Giselle";
+    src: url("./FHGiselle-Regular.ttf");
+    font-weight:300;
+}
+@font-face{
+    font-family:"FH Giselle";
+    src: url("./FHGiselle-Regular.ttf");
+    font-weight:500;
+}
+@font-face{
+    font-family:"FH Giselle";
+    src: url("./FHGiselle-Regular.ttf");
+    font-weight:600;
+}
+@font-face{
+    font-family:"FH Giselle";
+    src: url("./FHGiselle-Regular.ttf");
+    font-weight:700;
+}
+@font-face{
+    font-family: "Roxborough CF";
+    src: url("./RoxboroughCF-Regular.ttf");
+    font-weight:  400;
+}
+@font-face{
+    font-family: "Roxborough CF";
+    src: url("./RoxboroughCF-RegularItalic.ttf");
+    font-weight:  500;
+}
+@font-face{
+    font-family: "Roxborough CF";
+    src: url("./RoxboroughCF-RegularItalic.ttf");
+    font-weight:  300;
+}
+@font-face{
+    font-family: "Roxborough CF";
+    src: url("./RoxboroughCF-RegularItalic.ttf");
+    font-weight:  100;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Medium.ttf");
+    font-weight: 600;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Medium.ttf");
+    font-weight: 500;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Medium.ttf");
+    font-weight: 700;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Medium.ttf");
+    font-weight: 800;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Medium.ttf");
+    font-weight: 900;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Regular.ttf");
+    font-weight: 400;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Regular.ttf");
+    font-weight: 300;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Regular.ttf");
+    font-weight: 200;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Regular.ttf");
+    font-weight: 100;
+}
+@font-face{
+    font-family: "harmond";
+    src: url("./Harmond-Regular.ttf");
+    font-weight: 700;
+}
+@font-face{
+    font-family: "harmond";
+    src: url("./Harmond-Regular.ttf");
+    font-weight: 500;
+}
+@font-face{
+    font-family: "harmond";
+    src: url("./Harmond-Regular.ttf");
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+#mobilenav{
+    position: relative;
+    transform: translate(100%);
+    position: relative;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    position: fixed;
+    z-index: 99999999999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28,29,28);
+
+}
+#mobilenav #logo i{
+    color: #fff;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    font-size: 14vw;
+
+}
+
+#mobilenav .socials{
+    padding-top: 1.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.5vw;
+}
+ 
+ #mobilenav .socials a{
+    text-decoration: none;
+    color: #8d8c93;
+    display: inline-block;
+    color: #fff;
+}
+#mobilenav .socials a:hover i{
+    color: #0dd0b3;
+}
+.mobileicon{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: fit-content;
+     height: 5vh;
+}
+.mobileicon i{
+    display: none;
+    font-size: 10vw;
+    color: #fff;
+}
+
+#fs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 12%;
+    position: fixed;
+    z-index: 9999999999;
+    width: 0%;
+    height: 100%;
+    background-color:#1d1d1d;
+    background-color: #000;
+}
+
+
+#fs #logo{
+    margin-right: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family:"FH Giselle";
+}
+#prj{
+    color: #0dd0b3;
+}
+#fs #logo img{
+    width: 20%;
+    height: 90%;
+    opacity: 0;
+}
+#main{
+    width: 100%;
+    overflow: hidden;
+    background-color: #1c1d1c;
+    background-color: rgb(28,29,28);
+}
+#part1{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+#part1 #nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 12%;
+    height: 100vh;
+    background-color: #191819;
+}
+ #logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family:"FH Giselle";
+    width: 100%;
+    height: 30%;
+    background-color: #000;
+}
+ #logo img{
+    width: 80%;
+    height: 50%;
+    margin-top: -30px;
+}
+ #logo h5{
+    margin-top: -10px;
+    margin-left: -20px;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: roobert;
+    font-size: 2vw;
+}
+ #logo h6{
+    color: #a9ada9;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.2vw;
+}
+.navrows{
+    margin-top: 10vh;
+    width: 100%;
+}
+.navrows .rows{
+    margin: 0 auto;
+    border-bottom:.1px solid #6d706d;
+    border-top:.1px solid #6d706d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height:10vh;
+}
+.rows h5{
+    color: #878b8a;
+    text-transform: capitalize;
+    font-family: roobert;
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #fff;
+}
+.rows h5:hover{
+    color: #0dd0b3;
+}
+#nav .socials{
+    padding-top: 1.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.5vw;
+}
+#abt{
+    color: #0dd0b3;
+}
+ 
+ #nav .socials a{
+    text-decoration: none;
+    color: #8d8c93;
+    display: inline-block;
+    color: #fff;
+}
+#nav .socials a:hover i{
+    color: #0dd0b3;
+}
+
+#part1 #text{
+    width: 88%;
+    height: 100vh;
+    margin-left:4vw;
+}
+
+  .text{
+    padding: 2vw 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+}
+  .text h1{
+    font-size: 5vw;
+    font-weight: 500;
+    font-family: roobert;
+    color: #fff;
+}
+#t1{
+    transform: translateY(-300%);
+}
+#t2{
+    transform: translateY(300%);
+}
+  .text h1>span{
+   display: inline-block;
+}
+  .text #t1{
+    font-family:"Roxborough CF";
+    font-style: italic;
+    font-size: 6vw;
+}
+
+.bottom .social{
+    overflow: hidden;
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+}
+.social a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-family: roobert;
+    opacity: 0;
+}
+.social h3{
+    color: #fff;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0;
+    font-family: roobert;
+    text-transform: capitalize;
+}
+.social .s1{
+    height: 3vh;
+    position: relative;
+    width: fit-content;
+    margin-bottom: .2vw;
+    overflow: hidden;
+}
+
+.social .s1 .line{
+    position: absolute;
+    width: 0%;
+    height: .2px;
+    background-color:#fff;
+}
+.social .s1 .line1{
+    position: absolute;
+    width: 0%;
+    height: .2px;
+    background-color:#fff;
+}
+a{
+    text-decoration: none;
+}
+.bottom{
+    padding-left: 3vw;
+    display: flex;
+    align-items:center;
+    justify-content: space-between; 
+    width: 100%;
+    height: 40vh;
+}
+ 
+#s2{
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+#b1{
+    padding: 2vw;
+    display: flex;
+    gap: 5vw;
+}
+.header{
+    overflow: hidden;
+    margin-top: 5vw;
+    padding-left: 3vw;
+}
+.header h1{
+    color: #0dd0b3;
+    margin-bottom: 10px;
+    font-size: 4vw;
+    text-transform: capitalize;
+    font-family:"FH Giselle";
+    transform: translateY(-100%);
+
+}
+.header h5{
+    transform: translateY(100%);
+    color: #fff;
+    width: 60%;
+    font-size: 2vw;
+    text-transform: capitalize;
+    font-family:"FH Giselle";
+
+}
+#s4{
+    gap: 5.7vw;
+}
+@media (max-width:600px){
+    #nav{
+        display: none;
+        background-color: #fff;
+    }
+    #mobilenav #logo h5{
+        font-size: 8vw;
+    }
+    #mobilenav #logo h6{
+        font-size: 6vw;
+    }
+    #mobilenav #logo img{
+        width: 30%;
+    }
+    #mobilenav .rows h5{
+        font-size: 7vw;
+    }
+    #part1 #text{
+        width: 95%;
+    }
+    #mobilenav .socials a{
+        margin-top: 5vw;
+        font-size: 7vw;
+    }
+    .mobileicon i{
+        display: initial;
+    }
+    .header{
+        margin-top: 30vw;
+    }
+    .header h1{
+        font-size: 15vw;
+    }
+    .header h5{
+        margin-top: 5vw;
+        width: 100%;
+        font-size: 8vw;
+    }
+    #fs{
+        left: 0;
+    }
+    #fs #logo img{
+        width: 60%;
+        height: 90%;
+        margin-left: 15vw;
+    }
+    .text{
+        gap: 3vw;
+        margin-top: 15vw;
+    }
+    .text #t1{
+        font-size: 8vw;
+    }
+    .text h1{
+        font-size: 8vw;
+    }
+    .bottom{
+        margin-top: 10vw;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5vw;
+        justify-content: flex-start;
+    }
+    #s1{
+        gap: 15vw;
+    }
+    #s1 h3{
+       margin-left: 3vw;
+    }
+    #s3{
+        gap: 10vw;
+    }
+    #s4{
+        gap: 16vw;
+    }
+   
+}
+
+@media only screen and (min-width:540px) and (max-width:1000px){
+    #nav{
+        display: none;
+        background-color: #fff;
+    }
+    #mobilenav #logo h5{
+        font-size: 8vw;
+    }
+    #mobilenav #logo h6{
+        font-size: 6vw;
+    }
+    #mobilenav #logo img{
+        width: 30%;
+    }
+    #mobilenav .rows h5{
+        font-size: 5vw;
+    }
+    #part1 #text{
+        width: 95%;
+        height: 200vh;
+    }
+    #mobilenav .socials a{
+        margin-top: 5vw;
+        font-size: 5vw;
+    }
+    .mobileicon i{
+        display: initial;
+    }
+    .header{
+        margin-top: 30vw;
+    }
+    .header h1{
+        font-size: 10vw;
+    }
+    .header h5{
+        margin-top: 4vw;
+        width: 90%;
+        font-size: 5vw;
+    }
+    .social a{
+        font-size: 3vw;
+    }
+    #fs{
+        left: 0;
+    }
+    #fs #logo img{
+        width: 60%;
+        height: 90%;
+        margin-left: 15vw;
+    }
+    .text{
+        gap: 3vw;
+        margin-top: 15vw;
+    }
+    .text #t1{
+        font-size: 8vw;
+    }
+    .text h1{
+        font-size: 8vw;
+    }
+    .bottom{
+        margin-top: 10vw;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5vw;
+        justify-content: flex-start;
+    }
+    #s1{
+        gap: 15vw;
+    }
+    #s1 h3{
+       margin-left: 3vw;
+       font-size: 4vw;
+    }
+    #s3{
+        gap: 10vw;
+    }
+    #s4{
+        gap: 16vw;
+    }
+   
+}
+
+@media only screen and (min-width:1001px) and (max-width:1024px){
+    #nav{
+        display: none;
+        background-color: #fff;
+    }
+    #mobilenav #logo h5{
+        font-size: 8vw;
+    }
+    #mobilenav #logo h6{
+        font-size: 6vw;
+    }
+    #mobilenav #logo img{
+        width: 30%;
+    }
+    #mobilenav .rows h5{
+        font-size: 5vw;
+    }
+    #part1 #text{
+        width: 95%;
+        margin-top: 20vw;
+
+    }
+    .header h1{
+        font-size: 8vw;
+    }
+    .header h5{
+        font-size: 3vw;
+    }
+    .text{
+        margin-top: 10vw;
+    }
+    #mobilenav .socials a{
+        margin-top: 5vw;
+        font-size: 5vw;
+    }
+    #part1 #text .h1s h1{
+        font-size: 13vw;
+    }
+    #part1 #text .h1s .h1{
+        margin-top: 25vw;
+    }
+    #part1 #text .p>p{
+        margin-top: 5vw;
+        font-size: 8vw;
+        margin-bottom: 3vw;
+    }
+    #part1 #text .button{
+        margin-top: 5vw;
+        width: 350px;
+        height: 8vh;
+    }
+    .scroll h5{
+        font-size: 3vw;
+    }
+    .button>h5{
+        font-size: 4vw;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:center;
+        gap: 5vw;
+        height: 40vh;
+        margin-top: 10vw;
+    }
+    .social h3{
+        font-size: 4vw;
+    }
+    .social .s1 .line{
+        height: 2px;
+    }
+    .s{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    #s1{
+        margin-left: 3vw;
+        gap: 14vw;
+    }
+    .social a{
+        font-size: 3vw;
+    }
+    #s2{
+        gap: 5vw;
+    }
+    #s3{
+        gap: 10vw;
+    }
+    #s4{
+        gap: 16vw;
+    }
+    .scroll i{
+        font-size: 6vw;
+    }
+    .scroll{
+        margin-top:0vw;
+    }
+    #scroll1{
+        margin-left:-10vw;
+    }
+    .text2 h1{
+        margin-top: 3vw;
+        font-size: 12vw;
+    }
+    .text2 .contant>h5{
+        width: 100%;
+        font-size: 10vw;
+        margin-top:5vw;
+    }
+    .text2 h5 span{
+        font-size: 12vw;
+    }
+    .text2 #p{
+       font-size: 4vw;
+       width: 80%;
+       margin-top: 10vw;
+    }
+    #btns{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5vw;
+
+    }
+    #btns img{
+        margin-top: 10vw;
+    }
+    #part1 #text{
+        height: 250vh;
+    }
+    #fs{
+        left: 0;
+        
+    }
+    #fs #logo img{
+        width: 60%;
+        height: 90%;
+        margin-left: 15vw;
+    }
+    #sound{
+        right: 820px;
+        top: 40px;
+        font-size: 30px;
+    }
+    .mobileicon i{
+        display: initial;
+        font-size: 7vw;
+        margin-top: 5vw;
+        margin-right: 2vw;
+    }
+    #btns img{
+        width: 100%;
+    }
+}
+
+ 

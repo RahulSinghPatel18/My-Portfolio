@@ -1,0 +1,815 @@
+@font-face{
+    font-family:"FH Giselle";
+    src: url("./FHGiselle-Regular.ttf");
+    font-weight:400;
+}
+@font-face{
+    font-family:"FH Giselle";
+    src: url("./FHGiselle-Regular.ttf");
+    font-weight:300;
+}
+@font-face{
+    font-family:"FH Giselle";
+    src: url("./FHGiselle-Regular.ttf");
+    font-weight:500;
+}
+@font-face{
+    font-family:"FH Giselle";
+    src: url("./FHGiselle-Regular.ttf");
+    font-weight:600;
+}
+@font-face{
+    font-family:"FH Giselle";
+    src: url("./FHGiselle-Regular.ttf");
+    font-weight:700;
+}
+@font-face{
+    font-family: "Roxborough CF";
+    src: url("./RoxboroughCF-Regular.ttf");
+    font-weight:  400;
+}
+@font-face{
+    font-family: "Roxborough CF";
+    src: url("./RoxboroughCF-RegularItalic.ttf");
+    font-weight:  500;
+}
+@font-face{
+    font-family: "Roxborough CF";
+    src: url("./RoxboroughCF-RegularItalic.ttf");
+    font-weight:  300;
+}
+@font-face{
+    font-family: "Roxborough CF";
+    src: url("./RoxboroughCF-RegularItalic.ttf");
+    font-weight:  100;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Medium.ttf");
+    font-weight: 600;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Medium.ttf");
+    font-weight: 500;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Medium.ttf");
+    font-weight: 700;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Medium.ttf");
+    font-weight: 800;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Medium.ttf");
+    font-weight: 900;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Regular.ttf");
+    font-weight: 400;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Regular.ttf");
+    font-weight: 300;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Regular.ttf");
+    font-weight: 200;
+}
+@font-face{
+    font-family: "Roobert";
+    src: url("./Roobert-Regular.ttf");
+    font-weight: 100;
+}
+@font-face{
+    font-family: "harmond";
+    src: url("./Harmond-Regular.ttf");
+    font-weight: 700;
+}
+@font-face{
+    font-family: "harmond";
+    src: url("./Harmond-Regular.ttf");
+    font-weight: 500;
+}
+@font-face{
+    font-family: "harmond";
+    src: url("./Harmond-Regular.ttf");
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+}
+#work{
+    color: #0dd0b3;
+}
+
+#mobilenav{
+    position: relative;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    transform: translateX(100%);
+    position: fixed;
+    z-index: 99999999999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28,29,28);
+
+}
+#mobilenav #logo i{
+    color: #fff;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    font-size: 10vw;
+
+}
+
+#mobilenav .socials{
+    padding-top: 1.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.5vw;
+}
+ 
+ #mobilenav .socials a{
+    text-decoration: none;
+    color: #8d8c93;
+    display: inline-block;
+    color: #fff;
+}
+#mobilenav .socials a:hover i{
+    color: #0dd0b3;
+}
+.mobileicon{
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    width: fit-content;
+     height: 5vh;
+}
+.mobileicon i{
+    display: none;
+    font-size: 10vw;
+    color: #fff;
+}
+#fs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 12%;
+    position: fixed;
+    z-index: 9999999999;
+    width: 0%;
+    height: 100%;
+    background-color:#1d1d1d;
+    background-color: #000;
+}
+
+
+#fs #logo{
+    margin-right: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family:"FH Giselle";
+}
+#prj{
+    color: #0dd0b3;
+}
+#fs #logo img{
+    width: 20%;
+    height: 80%;
+    opacity: 0;
+}
+#main{
+    width: 100%;
+    overflow: hidden;
+    background-color: #1c1d1c;
+    background-color: rgb(28,29,28);
+}
+#part1{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    min-height: 100vh;
+}
+#part1 #nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 12%;
+    height: 100vh;
+    background-color: #191819;
+}
+ #logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family:"FH Giselle";
+    width: 100%;
+    height: 30%;
+    background-color: #000;
+}
+ #logo img{
+    width: 80%;
+    height: 50%;
+    margin-top: -30px;
+}
+ #logo h5{
+    margin-top: -10px;
+    margin-left: -20px;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: roobert;
+    font-size: 2vw;
+}
+ #logo h6{
+    color: #a9ada9;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.2vw;
+}
+.navrows{
+    margin-top: 10vh;
+    width: 100%;
+}
+.navrows .rows{
+    margin: 0 auto;
+    border-bottom:.1px solid #6d706d;
+    border-top:.1px solid #6d706d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height:10vh;
+}
+.rows h5{
+    color: #878b8a;
+    text-transform: capitalize;
+    font-family: roobert;
+    font-size: 1.4vw;
+    font-weight: 500;
+    color: #fff;
+}
+.rows h5:hover{
+    color: #0dd0b3;
+}
+#nav .socials{
+    padding-top: 1.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.5vw;
+}
+ 
+ #nav .socials a{
+    text-decoration: none;
+    color: #8d8c93;
+    display: inline-block;
+    color: #fff;
+}
+#nav .socials a:hover i{
+    color: #0dd0b3;
+}
+
+
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family: roobert;
+}
+#page6 {
+    background-color: #222;
+    min-height: 100vh;
+    width: 88%;
+    position: relative;
+    padding: 4.5vh 4.2vw;
+}
+
+#page6 h1 {
+    font-size: 4.6vmax;
+    text-transform: capitalize;
+    font-family: roobert;
+    margin-top: 1vmax;
+    margin-bottom: 3.5vmax;
+    color: #fff;
+    font-family:"FH Giselle";
+}
+
+#page6 h1 span {
+    color: #F6BA53;
+    font-family: roobert;
+}
+
+#artworks a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    height: 72px;
+    border-top: 2px solid #fff;
+    padding: 0 3px;
+}
+
+#artworks a:nth-last-child(1) {
+    border-bottom: 2px solid #fff;
+    margin-bottom: 5vmax;
+}
+
+#artworks a h4 {
+    font-size: 1.7vmax;
+    position: relative;
+    z-index: 99;
+    transition: color ease-in 0.4s;
+    width: 12%;
+}
+
+#artworks a h5 {
+    font-size: 1.8vmax;
+    font-weight: 600;
+    font-family: roobert;
+    width: 30%;
+    position: relative;
+    transition: color ease-in 0.4s;
+    z-index: 99;
+}
+
+#artworks a h6 {
+    font-size: 1.6vmax;
+    width: 30%;
+    text-align: right;
+    position: relative;
+    z-index: 99;
+    transition: color ease-in 0.4s;
+}
+a{
+    text-decoration: none;
+}
+#sliding-div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 9;
+    width: 0%;
+    transition: width cubic-bezier(0.19, 1, 0.22, 1) 1.3s;
+    background-color: #fff;
+}
+
+
+#artworks a:hover #sliding-div {
+    width: 100%;
+}
+
+#artworks a:hover h4 {
+    color: #222;
+}
+
+#artworks a:hover h5 {
+    color: #222;
+}
+
+#artworks a:hover h6 {
+    color: #222;
+}
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    #page6 {
+        background-color: #222;
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        padding: 4.5vh 4.7vw;
+    }
+
+    #page6 h1 {
+        font-size: 4vmax;
+        margin-top: 0vmax;
+        margin-bottom: 5vmax;
+    }
+
+    #page6 h1 span {
+        color: #F6BA53;
+        font-weight: 500;
+    }
+
+    #artworks a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        height: 70px;
+        border-top: 2px solid #fff;
+        padding: 0 2px;
+    }
+
+    #artworks a:nth-last-child(1) {
+        border-bottom: 2px solid #fff;
+        margin-bottom: 5vmax;
+    }
+
+    #artworks a h4 {
+        font-size: 2.3vmax;
+        position: relative;
+        z-index: 99;
+        transition: color ease-in 0.4s;
+        width: 18%;
+        /* background-color: red; */
+    }
+
+    #artworks a h5 {
+        font-size: 2vmax;
+        font-weight: 600;
+        font-family: gilroy;
+        width: 33%;
+        /* background-color: red; */
+        position: relative;
+        transition: color ease-in 0.4s;
+        z-index: 99;
+    }
+
+    #artworks a h6 {
+        font-size: 1.9vmax;
+        width: 29%;
+        text-align: right;
+        position: relative;
+        z-index: 99;
+        font-family: gilroy;
+        transition: color ease-in 0.4s;
+    }
+
+    #sliding-div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 9;
+        width: 0%;
+        transition: width cubic-bezier(0.19, 1, 0.22, 1) 1.3s;
+        background-color: #fff;
+    }
+    #nav{
+        display: none;
+        background-color: #fff;
+    }
+    #mobilenav #logo h5{
+        font-size: 8vw;
+    }
+    #mobilenav #logo h6{
+        font-size: 6vw;
+    }
+    #mobilenav #logo img{
+        width: 30%;
+    }
+    #mobilenav .rows h5{
+        font-size: 7vw;
+    }
+    #part1 #text{
+        width: 95%;
+    }
+    #mobilenav .socials a{
+        margin-top: 5vw;
+        font-size: 7vw;
+    }
+    .mobileicon i{
+        display: initial;
+    }
+    .mobileicon i{
+        display: initial;
+    }
+    #artworks a:hover #sliding-div {
+        width: 100%;
+    }
+
+    #artworks a:hover h4 {
+        color: #222;
+    }
+
+    #artworks a:hover h5 {
+        color: #222;
+    }
+
+    #artworks a:hover h6 {
+        color: #222;
+    }
+
+    #fs{
+        left: 0;
+    }
+    #fs #logo img{
+        width: 60%;
+        height: 90%;
+        margin-left: 15vw;
+    }
+
+}
+
+
+@media only screen and (min-width:540px) and (max-width:1000px) {
+    #page6 {
+        background-color: #222;
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        padding: 4.5vh 4.7vw;
+    }
+
+    #page6 h1 {
+        font-size: 4vmax;
+        margin-top: 0vmax;
+        margin-bottom: 5vmax;
+    }
+
+    #page6 h1 span {
+        color: #F6BA53;
+        font-weight: 500;
+    }
+    #artworks{
+        margin-top: 12vw;
+    }
+    #artworks a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        height: 100px;
+        border-top: 2px solid #fff;
+        padding: 0 2px;
+    }
+
+    #artworks a:nth-last-child(1) {
+        border-bottom: 2px solid #fff;
+        margin-bottom: 5vmax;
+    }
+
+    #artworks a h4 {
+        font-size: 2.3vmax;
+        position: relative;
+        z-index: 99;
+        transition: color ease-in 0.4s;
+        width: 18%;
+        /* background-color: red; */
+    }
+
+    #artworks a h5 {
+        font-size: 2vmax;
+        font-weight: 600;
+        font-family: gilroy;
+        width: 33%;
+        /* background-color: red; */
+        position: relative;
+        transition: color ease-in 0.4s;
+        z-index: 99;
+    }
+
+    #artworks a h6 {
+        font-size: 1.9vmax;
+        width: 29%;
+        text-align: right;
+        position: relative;
+        z-index: 99;
+        font-family: gilroy;
+        transition: color ease-in 0.4s;
+    }
+
+    #sliding-div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 9;
+        width: 0%;
+        transition: width cubic-bezier(0.19, 1, 0.22, 1) 1.3s;
+        background-color: #fff;
+    }
+    #nav{
+        display: none;
+        background-color: #fff;
+    }
+    #mobilenav #logo h5{
+        font-size: 8vw;
+    }
+    #mobilenav #logo h6{
+        font-size: 6vw;
+    }
+    #mobilenav #logo img{
+        width: 30%;
+    }
+    #mobilenav .rows h5{
+        font-size: 5vw;
+    }
+    #part1 #text{
+        width: 95%;
+    }
+    #mobilenav .socials a{
+        margin-top: 5vw;
+        font-size: 5vw;
+    }
+    .mobileicon i{
+        display: initial;
+    }
+    .mobileicon i{
+        display: initial;
+    }
+    #artworks a:hover #sliding-div {
+        width: 100%;
+    }
+
+    #artworks a:hover h4 {
+        color: #222;
+    }
+
+    #artworks a:hover h5 {
+        color: #222;
+    }
+
+    #artworks a:hover h6 {
+        color: #222;
+    }
+
+    #fs{
+        left: 0;
+    }
+    #fs #logo img{
+        width: 60%;
+        height: 90%;
+        margin-left: 15vw;
+    }
+    #nav{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width:1001px) and (max-width:1024px) {
+    #page6 {
+        margin-top: 15vw;
+        background-color: #222;
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        padding: 4.5vh 4.7vw;
+    }
+
+    #page6 h1 {
+        font-size: 4vmax;
+        margin-top: 0vmax;
+        margin-bottom: 5vmax;
+    }
+
+    #page6 h1 span {
+        color: #F6BA53;
+        font-weight: 500;
+    }
+    #artworks{
+        margin-top: 12vw;
+    }
+    #artworks a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        height: 100px;
+        border-top: 2px solid #fff;
+        padding: 0 2px;
+    }
+
+    #artworks a:nth-last-child(1) {
+        border-bottom: 2px solid #fff;
+        margin-bottom: 5vmax;
+    }
+
+    #artworks a h4 {
+        font-size: 2.3vmax;
+        position: relative;
+        z-index: 99;
+        transition: color ease-in 0.4s;
+        width: 18%;
+        /* background-color: red; */
+    }
+
+    #artworks a h5 {
+        font-size: 2vmax;
+        font-weight: 600;
+        font-family: gilroy;
+        width: 33%;
+        /* background-color: red; */
+        position: relative;
+        transition: color ease-in 0.4s;
+        z-index: 99;
+    }
+
+    #artworks a h6 {
+        font-size: 1.9vmax;
+        width: 29%;
+        text-align: right;
+        position: relative;
+        z-index: 99;
+        font-family: gilroy;
+        transition: color ease-in 0.4s;
+    }
+
+    #sliding-div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 9;
+        width: 0%;
+        transition: width cubic-bezier(0.19, 1, 0.22, 1) 1.3s;
+        background-color: #fff;
+    }
+    #nav{
+        display: none;
+        background-color: #fff;
+    }
+    #mobilenav #logo h5{
+        font-size: 8vw;
+    }
+    #mobilenav #logo h6{
+        font-size: 6vw;
+    }
+    #mobilenav #logo img{
+        width: 30%;
+    }
+    #mobilenav .rows h5{
+        font-size: 5vw;
+    }
+    #part1 #text{
+        width: 95%;
+    }
+    #mobilenav .socials a{
+        margin-top: 5vw;
+        font-size: 5vw;
+    }
+    .mobileicon i{
+        display: initial;
+    }
+    .mobileicon i{
+        font-size: 8vw;
+        display: initial;
+    }
+    #artworks a:hover #sliding-div {
+        width: 100%;
+    }
+
+    #artworks a:hover h4 {
+        color: #222;
+    }
+
+    #artworks a:hover h5 {
+        color: #222;
+    }
+
+    #artworks a:hover h6 {
+        color: #222;
+    }
+
+    #fs{
+        left: 0;
+    }
+    #fs #logo img{
+        width: 60%;
+        height: 90%;
+        margin-left: 15vw;
+    }
+    #nav{
+        display: none;
+    }
+
+}
